@@ -18,7 +18,7 @@ public class BioStationStringParser {
         
         double waterlevel = 0;
         int ranking = 0;
-        
+        System.out.println();
         // Parsen
         
         
