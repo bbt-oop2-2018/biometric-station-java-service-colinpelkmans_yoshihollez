@@ -35,8 +35,8 @@ public class JavaSerialPortExample {
                 try {
                     String dataString = data.getDataAsString();
                     System.out.println("Received data from the serial port: " + data.getDataAsString());
-                    
                     MqqtBroker mqqtBroker = new MqqtBroker("mqqtBroker");
+                    mqqtBroker.setupMqtt();
                     mqqtBroker.mqqtBroker("reee");
                 } catch (MqttException ex) {
                     Logger.getLogger(JavaSerialPortExample.class.getName()).log(Level.SEVERE, null, ex);
