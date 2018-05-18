@@ -24,8 +24,10 @@ class Parser {
         channels[2] = "AccelZ";
         channels[3] = "HB";
         channels[4] = "Temp";
-
-        if (dataString.contains("$") && dataString.contains("£")) {
+        boolean var2 = dataString.endsWith("£" + "");
+        //System.out.println(var2);
+        
+        if (dataString.startsWith("$") && dataString.contains("£")) {
             String foo = dataString.replace("$", "").replace("£", "");
             parsedData = foo.split("_");
 
